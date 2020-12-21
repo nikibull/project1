@@ -6,7 +6,31 @@ html
     link(rel='stylesheet', href='/bootstrap/css/solar.minbootstrap.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+   .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          a.navbar-brand(href='/') troubleshooting
+          a.navbar-brand(href='/about/') About
+          a.navbar-brand(href='/services/') Services
+          a.navbar-brand(href='/contacts/') Contacts
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #navbar-main.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li
+            
 
-   script(src='/javascript/jquery-3.5.1.js')
-   script(src='/bootstrap/js/bootstrap.min.js')
+    .container
+      block content
+
+      footer
+        .row
+          .col-xs-12
+            small &copy; Yakovlev Kirill
+
+    script(src='/javascript/jquery-3.5.1.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
+
+    
